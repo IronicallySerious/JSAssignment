@@ -9,92 +9,11 @@
     <title>
         About Twarit Waikar
     </title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type=text/javascript>
     
-    window.onload = function(){
-        console.log('yo');
-        
-        var xhttp = new XMLHttpRequest();
-        document.getElementById('IntroductionLink').onclick = function(e) 
-        {
-            console.log(e);
-            xhttp.open("GET", "introduction.html", true);
-            xhttp.send();
-        
-            xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("Introduction").innerHTML = this.responseText;
-                history.pushState(null ,null, 'introduction');
-            }
-            };
-        };
-        var xhttp2 = new XMLHttpRequest();
-        document.getElementById('AcademicsLink').onclick = function(e) 
-        {
-            console.log(e);
-            xhttp2.open("GET", "academics.html", true);
-            xhttp2.send();
-        
-            xhttp2.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("Introduction").innerHTML = this.responseText;
-                history.pushState(null, null, 'academics');
-            }
-            };
-        };
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/navigation.js" type=text/javascript></script>
 
-        var xhttp3 = new XMLHttpRequest();
-        document.getElementById('HobbiesLink').onclick = function(e) 
-        {
-            console.log(e);
-            xhttp3.open("GET", "hobbies.html", true);
-            xhttp3.send();
-        
-            xhttp3.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("Introduction").innerHTML = this.responseText;
-                history.pushState(null, null, 'hobbies');
-            }
-            };
-        };
 
-        var xhttp4 = new XMLHttpRequest();
-        document.getElementById('SkillsetLink').onclick = function(e) 
-        {
-            console.log(e);
-            xhttp4.open("GET", "skillset.html", true);
-            xhttp4.send();
-        
-            xhttp4.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("Introduction").innerHTML = this.responseText;
-                history.pushState(null, null, 'skillset');
-            }
-            };
-        };
-
-        var xhttp5 = new XMLHttpRequest();
-        document.getElementById('ContactLink').onclick = function(e) 
-        {
-            console.log(e);
-            xhttp5.open("GET", "contact.html", true);
-            xhttp5.send();
-        
-            xhttp5.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("Introduction").innerHTML = this.responseText;
-                history.pushState(null, null, 'contact');
-            }
-            };
-        };
-}
-    window.onpopstate = function(event) {    
-    if(event && event.state) {
-        window.location=location.reload(); 
-    }
-}
-    </script>
 </head>
 
 <body>
@@ -131,5 +50,8 @@
     </div>
     
 </div>
+
+
+
 </body>
 </html>
