@@ -27,34 +27,34 @@
         document.getElementById('IntroductionLink').onclick = function(e) 
         {
             console.log(e);
-            get_Page("introduction.html");
+            get_Page("/resources/introduction.html");
         };
         var xhttp2 = new XMLHttpRequest();
         document.getElementById('AcademicsLink').onclick = function(e) 
         {
             console.log(e);
-            get_Page("academics.html");
+            get_Page("/resources/academics.html");
         };
 
         var xhttp3 = new XMLHttpRequest();
         document.getElementById('HobbiesLink').onclick = function(e) 
         {
             console.log(e);
-            get_Page("hobbies.html");
+            get_Page("/resources/hobbies.html");
         };
 
         var xhttp4 = new XMLHttpRequest();
         document.getElementById('SkillsetLink').onclick = function(e) 
         {
             console.log(e);
-            get_Page("skillset.html");
+            get_Page("/resources/skillset.html");
         };
 
         var xhttp5 = new XMLHttpRequest();
         document.getElementById('ContactLink').onclick = function(e) 
         {
             console.log(e);
-            get_Page("contact.html");
+            get_Page("/resources/contact.html");
         };    
 }
 var link;
@@ -76,7 +76,7 @@ var link;
                 if(document.URL=="http://localhost:8000/")
                 {
                     console.log(e);
-                get_Page("introduction.html");
+                get_Page("/resources/introduction.html");
                 }
                 
                 else
